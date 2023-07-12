@@ -1,56 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    />
+    <link rel="stylesheet" href="/assets/stylesheets/style.css" />
     <title>Blue Stellar LLC</title>
-
-    <link rel="stylesheet" href="/assets/stylesheets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="nav__bar">
-        <li class="nav__item logo"><a href="#home" class="nav__link" draggable="false">Blue Stellar LLC</a></li>
-        <ul class="nav__list">
-            <li class="nav__item"><a href="#about" class="nav__link" draggable="false">About</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link" draggable="false">Work</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link" draggable="false">Contact</a></li>
-        </ul>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Blue Stellar <span>LLC</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#work">Work</a></li>
+        <li class="link"><a href="#gallary">Gallary</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home__container__one">
-
-            <p class="since__line"></p>
-            <p class="since__text">SINCE 2021</p>
-
-            <h2 class="home__subheading">Blue Stellar, <br>
-            we have no <span style="text-decoration: line-through; text-decoration-color: red;">limits</span>
-            </h2>
-            
-            <div class="home__button__container">
-                <a href="#about" class="home__button" id="btn-1">Learn More</a> 
-                <a href="#contact" class="home__button" id="btn-2">Contact Us</a>
-            </div>
+    <header>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="/assets/images/WhatsApp Image 2023-07-11 at 11.55.43 (1).jpeg" alt="header" />
+          <img src="/assets/images/WhatsApp Image 2023-07-11 at 11.55.43.jpeg" alt="header" />
         </div>
+        <div class="header__content">
+          <div>
+            <p class="sub__header">Since 2021</p>
+            <h1>Blue Stellar,<br />we have no limit</h1>
+            <p class="section__subtitle">
+              Blue Stellar LLC is a premier steel construction company, 
+              delivering exceptional quality and innovative solutions for your construction needs.
+            </p>
+            <div class="action__btns">
+              <a class="a-btn" href="#about" style="color: white;">About Us</a>
+              <a class="a-btn" href="#contact" style="color: white;">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title">More About Us</h2>
+          <p class="section__subtitle">
+            About us text goes here
+          </p>
+        </div>
+        <div class="destination__nav">
+          <span><i class="ri-arrow-left-s-line"></i></span>
+          <span><i class="ri-arrow-right-s-line"></i></span>
+        </div>
+      </div>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="/assets/images/gallary/gallary1.jpg" alt="destination" />
+          <div class="destination__details">
+            <p class="destination__title">Equipment:</p>
+            <p class="destination__subtitle">16P25/2000</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div class="destination__details">
+            <p class="destination__title">Machu Picchu</p>
+            <p class="destination__subtitle">Peru</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__details">
+            <p class="destination__title">Lauterbrunnen</p>
+            <p class="destination__subtitle">Switzerland</p>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img src="assets/destination-4.jpg" alt="destination" />
+          <div class="destination__details">
+            <p class="destination__title">Zhangjiajie</p>
+            <p class="destination__subtitle">China</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h1 class="about__title large__heading">About Us</h1>
+    <section class="trip" id="work">
+      <div class="section__container trip__container">
+        <h2 class="section__title">Top companies we have worked with</h2>
+        <p class="section__subtitle">
+          Bellow you can see the names of the companies that we have previously worked with.
+        </p>
+        <div class="trip__grid">
+
+          <div class="trip__card">
+            <img src="/assets/images/banner-cards/deltaasm.jpg" alt="trip" style="height: 130px;"/>
+            <div class="trip__details">
+              <p>Delta ASM</p>
+              <div class="rating"><i class="ri-star-fill"></i> 4.2</div>
+              <div class="booking__price">
+                <a href="https://delta-asm.az/az" class="book__now__a" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__card">
+            <img src="/assets/images/banner-cards/portofbaku.jpg" alt="trip" style="height: 130px;"/>
+            <div class="trip__details">
+              <p>Port of Baku</p>
+              <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+              <div class="booking__price">
+                <a href="https://portofbaku.com/en/" class="book__now__a" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__card">
+            <img src="/assets/images/banner-cards/mabrocona.jpg" alt="trip" style="height: 130px;"/>
+            <div class="trip__details">
+              <p>Mabrocone UAB</p>
+              <div class="rating"><i class="ri-star-fill"></i> 4.7</div>
+              <div class="booking__price">
+                <a href="https://mabrocona.com/contact" class="book__now__a" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__card">
+            <img src="/assets/images/banner-cards/marinasign.jpg" alt="trip" />
+            <div class="trip__details">
+              <p>Marina Sign</p>
+              <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+              <div class="booking__price">
+                <a href="https://www.litvija.lt/" class="book__now__a" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__card">
+            <img src="/assets/images/banner-cards/holcim.jpg" alt="trip" style="height: 130px;"/>
+            <div class="trip__details">
+              <p>Holcim Azerbaijan</p>
+              <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+              <div class="booking__price">
+                <a href="https://www.holcim.az/en" class="book__now__a" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="trip__card">
+            <img src="/assets/images/banner-cards/norm.jpg" alt="trip" style="height: 130px;"/>
+            <div class="trip__details">
+              <p>Norm Cement</p>
+              <div class="rating"><i class="ri-star-fill"></i> 4.5</div>
+              <div class="booking__price">
+                <a href="https://www.norm.az/en/" class="book__now__a" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work">
-        <h1 class="work__title large__heading">Our Work</h1>
+    <section class="gallary" id="gallary">
+      <div class="section__container gallary__container">
+        <div class="image__gallary">
+          <div class="gallary__col">
+            <img src="/assets/images/gallary/gallary1.jpg" alt="gallary" />
+          </div>
+          <div class="gallary__col">
+            <img src="/assets/images/gallary/gallary2.jpg" alt="gallary" />
+            <img src="/assets/images/gallary/gallary3.jpg" alt="gallary" />
+          </div>
+        </div>
+        <div class="gallary__content">
+          <div>
+            <h2 class="section__title">
+              Our work gallary that will inspire you
+            </h2>
+            <p class="section__subtitle">
+              Explore every project that we have worked on or pictures that we have taken while working on projects.
+            </p>
+            <button class="btn">View All</button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <footer id="contact">
+    <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title">Have a question?</h2>
+          <p class="section__subtitle">
+            You can email and ask your question, simply fill the form on the right and click send.
+          </p>
+        </div>
+        <div class="subscribe__form">
+          <form action="https://formsubmit.co/c62407f81d9ec289e01c000d8528605d" method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required style="margin-top: 5px;"/>
+            <input type="text" name="subject" placeholder="Subject" required style="margin-top: 5px;"/>
+            <textarea name="Message" placeholder="Message" required style="margin-top: 5px;"></textarea>
+            <button class="btn" type="submit" style="margin-top: 20px;">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Blue Stellar <span>LLC</span></h3>
+          <p>
+            Explore your suitable and dream places around the world. Here you
+            can find your right destination.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Address</h4>
+          <p>
+            <span>Address:</span> Garadagh Sahil District, Azerbaijan
+          </p>
+          <p><span>Email:</span> bluestellarllc@gmail.com</p>
+          <p><span>Phone 1:</span> +994 55 916 82 10</p>
+          <p><span>Phone 2:</span> +994 50 501 15 05</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Blue Stellar LLC. All rights reserved.
+      </div>
     </footer>
-    <script defer src="/assets/js/app.js"></script>
-</body>
+  </body>
 </html>
