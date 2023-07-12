@@ -108,6 +108,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 
 .nav__logo {
@@ -140,6 +141,7 @@ nav {
 
 header {
   background-color: var(--secondary-color);
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6805509.jpg&f=1&nofb=1&ipt=8d9d96355a891f8e5d04b9ebe42737c08d60d1f7856747d7ab3016144f152c5e&ipo=images);
 }
 
 .header__container {
@@ -179,7 +181,7 @@ header {
 }
 
 .header__content > div {
-  max-width: 400px;
+  max-width: 600px;
   display: grid;
   gap: 1rem;
 }
@@ -188,6 +190,18 @@ header {
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.header__content .sub__header::before {
+  content: '';
+  width: 150px;
+  height: 2px;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  display: block;
+  margin-right: 15px;
 }
 
 .header__content h1 {
