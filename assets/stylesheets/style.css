@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+@font-face {
+  font-family: tomatos;
+  src: url(/assets/fonts/Tomatoes-O8L8.ttf) format("truetype");
+}
 
 html {
     scroll-behavior: smooth;
@@ -37,6 +41,12 @@ html {
   gap: 2rem;
   flex-wrap: wrap;
   margin-bottom: 4rem;
+}
+
+.heading__cursive {
+  font-size: 40px;
+  font-family: 'tomatos';
+  text-decoration: underline;
 }
 
 .section__title {
@@ -82,6 +92,22 @@ html {
 
 .a-btn:hover {
   background-color: var(--primary-color-dark);
+}
+
+.a-btn-home {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #3f4040;
+  background-color: #B6BCD2;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.a-btn-home:hover {
+  background-color: grey;
 }
 
 a {
@@ -141,6 +167,8 @@ nav {
 header {
   background-color: var(--secondary-color);
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6805509.jpg&f=1&nofb=1&ipt=8d9d96355a891f8e5d04b9ebe42737c08d60d1f7856747d7ab3016144f152c5e&ipo=images);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__container {
