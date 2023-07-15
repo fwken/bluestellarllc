@@ -137,7 +137,7 @@ nav {
 }
 
 .nav__logo {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-dark);
   cursor: pointer;
@@ -169,6 +169,11 @@ header {
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp6805509.jpg&f=1&nofb=1&ipt=8d9d96355a891f8e5d04b9ebe42737c08d60d1f7856747d7ab3016144f152c5e&ipo=images);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.heading__logo {
+  width: 80px;
+  height: 80px;
 }
 
 .header__container {
