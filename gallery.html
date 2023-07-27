@@ -5,13 +5,17 @@
     <title>bluestellarllc || gallery</title>
     <link rel="icon" href="/assets/images/logo.PNG">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
+    <link rel="stylesheet" href="/assets/stylesheets/swiper.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <!-- Nav Section -->
     <nav>
-        <div class="nav__logo"><a class="book__now__a" href="index.html">Back</a></div>
+        <a class="book__now__a" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
         <ul class="nav__links">
           <li class="link"><a href=#gallery>Gallery</a></li>
             <li class="link"><a href="#contact">Contact</a></li>
@@ -28,40 +32,94 @@
             can find your right destination.
           </p>
         </div>
-        <div class="destination__nav">
-          <span><i class="ri-arrow-left-s-line"></i></span>
-          <span><i class="ri-arrow-right-s-line"></i></span>
-        </div>
       </div>
-      <div class="destination__grid">
-        <div class="destination__card">
-          <img src="/assets/images/gallery/gallary1.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__title">Banff</p>
-            <p class="destination__subtitle">Canada</p>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+
+            <!-- Card 1 -->
+            <div class="card">
+              <div class="card-content">
+                <div class="card-image">
+                  <img src="/assets/images/members/zaur.jpeg" alt="" class="card-img">
+                </div>
+  
+                <div class="card-details">
+                  <p class="name">Zaur Taghiyev</p>
+                  <p class="description">CEO</p>
+                  <br><br>
+                  <a href="mailto:bluestellarllc@gmail.com" class="book__now__a">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+              <div class="card-content">
+                <div class="card-image">
+                  <img src="/assets/images/members/hafizY (1).jpeg" alt="" class="card-img">
+                </div>
+  
+                <div class="card-details">
+                  <p class="name">Hafiz Yusifov</p>
+                  <p class="description">Technical Director</p>
+                  <br><br>
+                  <a href="mailto:yusifovhafiz5@gmail.com" class="book__now__a">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+              <div class="card-content">
+                <div class="card-image">
+                  <img src="/assets/images/members/zaurH.jpeg" alt="" class="card-img">
+                </div>
+  
+                <div class="card-details">
+                  <p class="name">Zaur Hasanov</p>
+                  <p class="description">Coordinator</p>
+                  <br><br>
+                  <a href="" class="book__now__a">Contact</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/gallery/gallery1/gallary1.jpg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery1/gallary2.jpg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery1/gallary3.jpg" alt="gallery-img" class="swiper-image">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/gallery/gallery2/gallery4.jpg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery2/gallery5.jpg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery2/gallery6.jpg" alt="gallery-img" class="swiper-image">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/gallery/gallery3/gallery7.jpg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery3/gallery8.jpeg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery3/gallery9.jpeg" alt="gallery-img" class="swiper-image">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/gallery/gallery4/gallery10.jpeg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery4/gallery11.jpeg" alt="gallery-img" class="swiper-image">
+            <img src="/assets/images/gallery/gallery4/gallery12.jpeg" alt="gallery-img" class="swiper-image">
           </div>
         </div>
-        <div class="destination__card">
-          <img src="/assets/images/gallery/gallary2.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__title">Machu Picchu</p>
-            <p class="destination__subtitle">Peru</p>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="/assets/images/gallery/gallary3.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__title">Lauterbrunnen</p>
-            <p class="destination__subtitle">Switzerland</p>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="/assets/images/gallery/gallary3.jpg" alt="destination" />
-          <div class="destination__details">
-            <p class="destination__title">Zhangjiajie</p>
-            <p class="destination__subtitle">China</p>
-          </div>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
     </section>
 
@@ -117,5 +175,9 @@
           Copyright © 2023 Blue Stellar LLC. All rights reserved.
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script defer src="/assets/scripts/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.js"></script>
 </body>
 </html>

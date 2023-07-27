@@ -1,0 +1,51 @@
+.swiper {
+    height: 500px;
+    width: 1120px;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.swiper-image {
+    height: 250px;
+    width: 700px;
+    margin: 30px;
+    border-radius: 1.2rem;
+}
+
+/* Card */ 
+.card {
+    background: #fafcff;
+    border-radius: 1.2rem;
+    margin: 20px;
+}
+
+.card-content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3685fb;
+}
+
+.name {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.description {
+    margin-top: 10px;
+    color: grey;
+    font-size: 14px;
+}
+
